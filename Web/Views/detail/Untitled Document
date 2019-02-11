@@ -1,0 +1,142 @@
+@extends('Web::layout.master_inner')
+@section('css')
+  
+@endsection
+@section('content')
+<div class="container-fluid bg-light">
+   <div class="row">
+      <div class="container">
+         <div class="row my-4">
+            <div class="col">
+               <h3 class=""><strong>Ride Detail</strong></h3>
+            </div>
+         </div>
+         <div class="row px-3">
+            <div class="col mx-2  fancy-box">
+               <div class="row">
+                  <div class="col-6 mt4">
+                     <div class="media">
+                        <div class="quote">
+                           <img src="images/pic.png" class="mt-4 ml-2">
+                        </div>
+                        <div class="media-body  ml-3 mt-4">
+                           <h5 class="mt-0 mb-0">Allen Chandler</h5>
+                           <p class="mb-0">Toyoto Pius</p>
+                           <div class="media">
+                              <img src="images/coin.png" class="mt-1">
+                              <div class="media-body">
+                                 <p class="ml-2">$50.13(cash)</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-6 mt-4 float-right">
+                     <div class="float-right">
+                        <p class="status mb-0"><b>Completed</b></p>
+                        Today at 3:26PM
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row px-3 mt-4">
+            <div class="col mx-2  fancy-box">
+               <div class="col mt4">
+                  <div class="media p-2">
+                     <img class="align-self-center mr-3" src="images/location.png" alt="Generic placeholder image">
+                     <div class="media-body ">
+                        <input class="form-control model-input mb-4" id="inputPassword2" placeholder="Pick-up Location" type="text">
+                        <input class="form-control model-input" id="inputPassword2" placeholder="Drop-up Location" type="text">
+                     </div>
+                  </div>
+               </div>
+               <div class="col mt4">
+                  <div class="map-responsive">
+                     <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" style="border:0" allowfullscreen="" width="100%" height="400" frameborder="0"></iframe>
+                  </div>
+               </div>
+               <!--<div class="col-6 mt-4 float-right">
+                  <div class="float-right">
+                         <p class="status mb-0"><b>Completed</b></p>
+                         Today at 3:26PM
+                         </div>
+                         </div>-->
+            </div>
+         </div>
+         <div class="row my-4">
+            <div class="col">
+               <h3><strong>Payment Detail</strong></h3>
+            </div>
+            <div class="col">
+               <h3><strong>Client Feedback</strong></h3>
+            </div>
+         </div>
+         <div class="row px-3 mb-4">
+            <div class="col mx-2  fancy-box">
+               <div class="row">
+                  <div class="col mt4 p-4">
+                     <div class="media">
+                        <img src="images/coin1.png" class="ml-2">
+                        <div class="media-body  ml-3">
+                           <h5 class="mt-0 mb-0">$11.0</h5>
+                           <p class="mb-0">Cash</p>
+                        </div>
+                     </div>
+                     <hr>
+                     <div class="col">
+                        <div class="row">
+                           <div class="col">
+                              <h6>Trip Fare</h6>
+                              <h6>Waiting Cost</h6>
+                           </div>
+                           <div class="col float-right">
+                              <div class="float-right">
+                                 <h6>$10.00</h6>
+                                 <h6>$1.00</h6>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <hr>
+                     <div class="col">
+                        <div class="row">
+                           <div class="col">
+                              <h6>Promo Discount</h6>
+                              <h6 class="color-green">Total</h6>
+                           </div>
+                           <div class="col float-right">
+                              <div class="float-right">
+                                 <h6>-$1.00</h6>
+                                 <h6 class="color-green">$11.00</h6>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col mx-2 fancy-box">
+               <div class="row">
+                  <div class="col p-4 mt4">
+                     <img src="images/five-star.png">
+                  </div>
+               </div>
+               <hr>
+               <div class="col">
+                  <div class="row">
+                     <div class="col">
+                        <h6>COMMENT</h6>
+                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscingelit.Nullam commodo tempus
+                           interdum.Aliquam erat volutpat. Mauris eu nibh a leo volutpat lacinia Mauris eu
+                           nibh a leo volutpat lacinia.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+@endsection
